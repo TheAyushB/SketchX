@@ -15,3 +15,4 @@ Steps:
 13. Create a db package
 14. Using the db package in the http layer
 15. Add a common package where we add the zod schema and the JWT_SECRET 
+16. Defining the schema in schema.prisma

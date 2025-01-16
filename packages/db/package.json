@@ -2,9 +2,9 @@
   "name": "@repo/db",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "db.js",
   "exports": {
-    "./clients": "./src/db.ts"
+    "./client": "./src/db.ts"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

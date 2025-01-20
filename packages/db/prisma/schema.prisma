@@ -27,7 +27,7 @@ model Room {
 }
 
 model Chat {
-  id      Int    @id
+  id      Int    @id @default(autoincrement())
   roomId  Int
   message String
   userId  String

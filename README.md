@@ -20,3 +20,7 @@ Steps:
 18. WS layer, room management, broadcast messages
 19. HTTP route for GET /chats?room=123
 20. Frontend 
+    20.1. Landing Page
+    20.2. UI Components
+    20.3. Auth Pages
+21. Create Canvas from scratch

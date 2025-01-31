@@ -1,14 +1,16 @@
-import '../styles/globals.css';
+"use client";
+import { usePathname } from "next/navigation";
+import "../styles/globals.css";
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  return (
-    <html lang="en">
-      <body className="bg-black text-white font-sans antialiased">
-        <main className="min-h-screen">
-          <div className="geometric-pattern absolute inset-0 opacity-10" />
-          {children}
-        </main>
-      </body>
-    </html>
-  );
+    const pathname = usePathname();
+    const isCanvasRoute = pathname.startsWith("/canvas");
+
+    return (
+        <html lang="en">
+            <body className={isCanvasRoute ? "disable-global-styles" : ""}>
+                {children}
+            </body>
+        </html>
+    );
 }
